@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on linux)" generated="20221003 15:25:01.350" rpa="false" schemaversion="3">
+<suite id="s1" name="Exercício" source="/home/katy/Área de Trabalho/Exercício">
+<suite id="s1-s1" name="Case" source="/home/katy/Área de Trabalho/Exercício/case">
+<suite id="s1-s1-s1" name="Exercicio1" source="/home/katy/Área de Trabalho/Exercício/case/exercicio1.robot">
+<test id="s1-s1-s1-t1" name="Iformação Sobre Angelina" line="21">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${Angelina.nome}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.403" endtime="20221003 15:25:01.404"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Angelina.idade}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.405" endtime="20221003 15:25:01.406"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Angelina.rua}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.406" endtime="20221003 15:25:01.407"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Angelina.numero}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.408" endtime="20221003 15:25:01.409"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Angelina.cep}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.409" endtime="20221003 15:25:01.410"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Angelina.bairro}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.411" endtime="20221003 15:25:01.412"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Angelina.cidade}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.412" endtime="20221003 15:25:01.414"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Angelina.estado}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.414" endtime="20221003 15:25:01.416"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.402" endtime="20221003 15:25:01.416"/>
+</test>
+<doc>Exercício Proposto pela Prime Hero</doc>
+<status status="PASS" starttime="20221003 15:25:01.381" endtime="20221003 15:25:01.417"/>
+</suite>
+<suite id="s1-s1-s2" name="Exercicio3" source="/home/katy/Área de Trabalho/Exercício/case/exercicio3.robot">
+<test id="s1-s1-s2-t1" name="Frutas Lista" line="17">
+<kw name="Create List" library="BuiltIn">
+<var>@{FRUTAS}</var>
+<arg>maça</arg>
+<arg>laranja</arg>
+<arg>Banana</arg>
+<arg>melão</arg>
+<arg>caju</arg>
+<arg>damasco</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20221003 15:25:01.424" level="INFO">@{FRUTAS} = [ maça | laranja | Banana | melão | caju | damasco ]</msg>
+<status status="PASS" starttime="20221003 15:25:01.423" endtime="20221003 15:25:01.424"/>
+</kw>
+<for flavor="IN">
+<var>${FRUTA}</var>
+<value>@{FRUTAS}</value>
+<iter>
+<var name="${FRUTA}">maça</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.424" endtime="20221003 15:25:01.425"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.424" endtime="20221003 15:25:01.425"/>
+</iter>
+<iter>
+<var name="${FRUTA}">laranja</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.425" endtime="20221003 15:25:01.426"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.425" endtime="20221003 15:25:01.426"/>
+</iter>
+<iter>
+<var name="${FRUTA}">Banana</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.426" endtime="20221003 15:25:01.426"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.426" endtime="20221003 15:25:01.426"/>
+</iter>
+<iter>
+<var name="${FRUTA}">melão</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.427" endtime="20221003 15:25:01.427"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.427" endtime="20221003 15:25:01.427"/>
+</iter>
+<iter>
+<var name="${FRUTA}">caju</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.428" endtime="20221003 15:25:01.428"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.427" endtime="20221003 15:25:01.428"/>
+</iter>
+<iter>
+<var name="${FRUTA}">damasco</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.428" endtime="20221003 15:25:01.429"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.428" endtime="20221003 15:25:01.429"/>
+</iter>
+<status status="PASS" starttime="20221003 15:25:01.424" endtime="20221003 15:25:01.429"/>
+</for>
+<tag>Frutas</tag>
+<status status="PASS" starttime="20221003 15:25:01.422" endtime="20221003 15:25:01.429"/>
+</test>
+<doc>Exercício Proposto pela Prime Hero</doc>
+<status status="PASS" starttime="20221003 15:25:01.419" endtime="20221003 15:25:01.430"/>
+</suite>
+<suite id="s1-s1-s3" name="Exercicio4" source="/home/katy/Área de Trabalho/Exercício/case/exercicio4.robot">
+<test id="s1-s1-s3-t1" name="Loop que conta números pares entra 0 a 10" line="8">
+<for flavor="IN RANGE">
+<var>${COUNT}</var>
+<value>0</value>
+<value>11</value>
+<iter>
+<var name="${COUNT}">0</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>(${COUNT}+1)%2==0</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20221003 15:25:01.437" endtime="20221003 15:25:01.438"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nSão numeros pares ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.438" endtime="20221003 15:25:01.438"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.437" endtime="20221003 15:25:01.438"/>
+</iter>
+<iter>
+<var name="${COUNT}">1</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>(${COUNT}+1)%2==0</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<msg timestamp="20221003 15:25:01.439" level="INFO">Continuing for loop from the next iteration.</msg>
+<status status="PASS" starttime="20221003 15:25:01.438" endtime="20221003 15:25:01.440"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nSão numeros pares ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20221003 15:25:01.440" endtime="20221003 15:25:01.440"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.438" endtime="20221003 15:25:01.440"/>
+</iter>
+<iter>
+<var name="${COUNT}">2</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>(${COUNT}+1)%2==0</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20221003 15:25:01.440" endtime="20221003 15:25:01.441"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nSão numeros pares ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.441" endtime="20221003 15:25:01.442"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.440" endtime="20221003 15:25:01.442"/>
+</iter>
+<iter>
+<var name="${COUNT}">3</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>(${COUNT}+1)%2==0</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<msg timestamp="20221003 15:25:01.443" level="INFO">Continuing for loop from the next iteration.</msg>
+<status status="PASS" starttime="20221003 15:25:01.442" endtime="20221003 15:25:01.444"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nSão numeros pares ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20221003 15:25:01.444" endtime="20221003 15:25:01.444"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.442" endtime="20221003 15:25:01.444"/>
+</iter>
+<iter>
+<var name="${COUNT}">4</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>(${COUNT}+1)%2==0</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20221003 15:25:01.445" endtime="20221003 15:25:01.445"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nSão numeros pares ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.446" endtime="20221003 15:25:01.446"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.444" endtime="20221003 15:25:01.446"/>
+</iter>
+<iter>
+<var name="${COUNT}">5</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>(${COUNT}+1)%2==0</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<msg timestamp="20221003 15:25:01.447" level="INFO">Continuing for loop from the next iteration.</msg>
+<status status="PASS" starttime="20221003 15:25:01.447" endtime="20221003 15:25:01.448"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nSão numeros pares ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20221003 15:25:01.448" endtime="20221003 15:25:01.448"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.446" endtime="20221003 15:25:01.448"/>
+</iter>
+<iter>
+<var name="${COUNT}">6</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>(${COUNT}+1)%2==0</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20221003 15:25:01.448" endtime="20221003 15:25:01.449"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nSão numeros pares ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.449" endtime="20221003 15:25:01.450"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.448" endtime="20221003 15:25:01.450"/>
+</iter>
+<iter>
+<var name="${COUNT}">7</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>(${COUNT}+1)%2==0</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<msg timestamp="20221003 15:25:01.451" level="INFO">Continuing for loop from the next iteration.</msg>
+<status status="PASS" starttime="20221003 15:25:01.450" endtime="20221003 15:25:01.452"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nSão numeros pares ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20221003 15:25:01.452" endtime="20221003 15:25:01.452"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.450" endtime="20221003 15:25:01.452"/>
+</iter>
+<iter>
+<var name="${COUNT}">8</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>(${COUNT}+1)%2==0</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20221003 15:25:01.453" endtime="20221003 15:25:01.453"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nSão numeros pares ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.454" endtime="20221003 15:25:01.454"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.452" endtime="20221003 15:25:01.455"/>
+</iter>
+<iter>
+<var name="${COUNT}">9</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>(${COUNT}+1)%2==0</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<msg timestamp="20221003 15:25:01.456" level="INFO">Continuing for loop from the next iteration.</msg>
+<status status="PASS" starttime="20221003 15:25:01.455" endtime="20221003 15:25:01.456"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nSão numeros pares ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20221003 15:25:01.456" endtime="20221003 15:25:01.457"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.455" endtime="20221003 15:25:01.457"/>
+</iter>
+<iter>
+<var name="${COUNT}">10</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>(${COUNT}+1)%2==0</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20221003 15:25:01.457" endtime="20221003 15:25:01.458"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nSão numeros pares ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221003 15:25:01.458" endtime="20221003 15:25:01.459"/>
+</kw>
+<status status="PASS" starttime="20221003 15:25:01.457" endtime="20221003 15:25:01.459"/>
+</iter>
+<status status="PASS" starttime="20221003 15:25:01.437" endtime="20221003 15:25:01.459"/>
+</for>
+<tag>COUNT</tag>
+<status status="PASS" starttime="20221003 15:25:01.436" endtime="20221003 15:25:01.460"/>
+</test>
+<doc>Exercício Proposto pela Prime Hero</doc>
+<status status="PASS" starttime="20221003 15:25:01.432" endtime="20221003 15:25:01.461"/>
+</suite>
+<status status="PASS" starttime="20221003 15:25:01.378" endtime="20221003 15:25:01.463"/>
+</suite>
+<status status="PASS" starttime="20221003 15:25:01.351" endtime="20221003 15:25:01.465"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">COUNT</stat>
+<stat pass="1" fail="0" skip="0">Frutas</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Exercício">Exercício</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Case">Exercício.Case</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Exercicio1">Exercício.Case.Exercicio1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s2" name="Exercicio3">Exercício.Case.Exercicio3</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s3" name="Exercicio4">Exercício.Case.Exercicio4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
